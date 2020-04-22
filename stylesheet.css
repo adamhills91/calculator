@@ -1,0 +1,120 @@
+:root {}
+
+body {
+  font-size: 20px;
+  background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+  padding: 0 20px 20px;
+  width: 300px;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  /* border-right: 5px solid #6d6d6d; */
+  /* border-bottom: 15px solid #6d6d6d; */
+}
+
+#banner {
+  color: #6d6d6d;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#banner h1 {
+  margin: 0;
+  user-select: none;
+}
+
+#solar {
+  display: flex;
+}
+
+#solar div {
+  width: 40px;
+  height: 40px;
+  background-color: #49000c;
+  border-right: 1px solid black;
+  border-top: 4px solid black;
+}
+
+div #first-block {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+div #last-block {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: none;
+}
+
+#display {
+  background-color: #8eac92;
+  height: 60px;
+  margin-bottom: 20px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  color: black;
+  /* font-style: italic; */
+  padding: 0 10px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+  height: 250px;
+}
+
+button {
+  /* width: 50px; */
+  border: none;
+  border-radius: 10px;
+  background-color: #6d6d6d;
+  border-bottom: 3px solid #999999;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+
+button:hover {
+  /* filter: brightness(80%); */
+  /* color: orange; */
+}
+
+button:active {
+  transform: translateY(3px);
+  border-bottom: 3px solid #1d1d1d !important;
+}
+
+#acButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #bb1717;
+  border-bottom: 3px solid #bb5c5c;
+}
+
+#equalsButton {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  background-color: orange;
+  border-bottom: 3px solid rgb(255, 203, 107);
+}
+
+#zeroButton {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
